@@ -2,10 +2,9 @@ package LineComparision;
 
 import java.util.Scanner;
 
-public class EqualityOfLine {
+public class ToFindGreaterLine {
 
 	public static void main(String[] args) {
-		
 System.out.println("Welcome to Line comparison program...!");
 		
 		int x1,x2,y1,y2;
@@ -33,7 +32,19 @@ System.out.println("Welcome to Line comparison program...!");
         System.out.println(x1 + " = " + y1 + " : " + (x1 == y1));
         System.out.println(x2 + " = " + y2 + " : " + (x2 == y2));
         
+        double length1 = (x2 - x1);
+        double length2 = (y2 - y1);
         
+        if (length1 > length2)
+        {
+        	System.out.println("line (x1, x2) = " +  "(" + x1 + "," + x2 +")"+ "is greater");
+        	System.out.println("line (y1, y2) = " +  "(" + y1 + "," + y2 + ")" + "is lesser");
+        }
+        else
+        {
+        	System.out.println("line (y1, y2) = " +  "(" + y1 + "," + y2 + ")" + "is greater");
+        	System.out.println("line (x1, x2) = " +  "(" + x1 + "," + x2 +")"+ "is lesser");
+        }
         
         
 
